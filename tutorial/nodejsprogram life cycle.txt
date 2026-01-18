@@ -1,0 +1,597 @@
+nodejs program life cycle
+
+=== SECTION 1: THE BASICS ===
+25. Module Introduction
+26. How The Web Works
+27. Creating a Node Server
+28. The Node Lifecycle & Event Loop
+29. Controlling the Node.js Process
+30. Understanding Requests
+31. Sending Responses
+32. Request & Response Headers
+33. Routing Requests
+34. Redirecting Requests
+35. Parsing Request Bodies
+36. Understanding Event Driven Code Execution
+37. Blocking and Non-Blocking Code
+38. Node.js - Looking Behind the Scenes
+39. Using the Node Modules System
+40. Wrap Up
+Assignment 1: Time to Practice - The Basics
+41. Useful Resources & Links
+
+=== SECTION 2: DEVELOPMENT WORKFLOW & DEBUGGING ===
+42. Module Introduction
+43. Understanding NPM Scripts
+44. Installing 3rd Party Packages
+45. Global Features vs Core Modules vs Third-Party Modules
+46. Using Nodemon for Autorestarts
+47. Global & Local npm Packages
+48. Understanding different Error Types
+49. Finding & Fixing Syntax Errors
+50. Dealing with Runtime Errors
+51. Logical Errors
+52. Using the Debugger
+53. Restarting the Debugger Automatically After Editing our App
+54. Debugging Node.js in Visual Studio Code
+55. Changing Variables in the Debug Console
+56. Wrap Up
+57. Useful Resources & Links
+
+=== SECTION 3: EXPRESS.JS ===
+58. Module Introduction
+59. What is Express.js?
+60. Installing Express.js
+61. Adding Middleware
+62. How Middleware Works
+63. Express.js - Looking Behind the Scenes
+64. Handling Different Routes
+Assignment 2: Time to Practice - Express.js
+65. Parsing Incoming Requests
+66. Limiting Middleware Execution to POST Requests
+67. Using Express Router
+68. Adding a 404 Error Page
+69. Filtering Paths
+70. Creating HTML Pages
+71. Serving HTML Pages
+72. Returning a 404 Page
+73. A Hint!
+74. Using a Helper Function for Navigation
+75. Styling our Pages
+76. Serving Files Statically
+Assignment 3: Time to Practice - Navigation
+77. Wrap Up
+78. Useful Resources & Links
+
+=== SECTION 4: TEMPLATING ENGINES ===
+79. Module Introduction
+80. Sharing Data Across Requests & Users
+81. Templating Engines - An Overview
+82. Installing & Implementing Pug
+83. Outputting Dynamic Content
+84. Official Pug Docs
+85. Converting HTML Files to Pug
+86. Adding a Layout
+87. Finishing the Pug Template
+88. Avoiding an Error
+89. Working with Handlebars
+90. Converting our Project to Handlebars
+91. Adding the Layout to Handlebars
+92. Working with EJS
+93. Working on the Layout with Partials
+94. Wrap Up
+Assignment 4: Time to Practice - Templating Engines
+95. [OPTIONAL] Assignment Solution
+96. Useful Resources & Links
+
+=== SECTION 5: MVC (MODEL-VIEW-CONTROLLER) ===
+97. Module Introduction
+98. What is the MVC?
+99. Adding Controllers
+100. Finishing the Controllers
+101. Adding a Product Model
+102. Storing Data in Files Via the Model
+103. Fetching Data from Files Via the Model
+104. Refactoring the File Storage Code
+105. Wrap Up
+106. Useful Resources & Links
+
+=== SECTION 6: ENHANCED MVC ===
+107. Module Introduction
+108. Creating the Shop Structure
+109. Working on the Navigation
+110. Registering the Routes
+111. Storing Product Data
+112. Displaying Product Data
+113. Editing & Deleting Products
+114. Adding Another Item
+115. Useful Resources & Links
+
+=== SECTION 7: DYNAMIC ROUTES & ADVANCED MODELS ===
+116. Module Introduction
+117. Preparations
+118. Applied Changes
+119. Adding the Product ID to the Path
+120. Extracting Dynamic Params
+121. Loading Product Detail Data
+122. Rendering the Product Detail View
+123. Passing Data with POST Requests
+124. Adding a Cart Model
+125. Using Query Params
+126. Pre-Populating the Edit Product Page with Data
+127. Linking to the Edit Page
+128. Editing the Product Data
+129. Adding the Product-Delete Functionality
+130. Deleting Cart Items
+131. Displaying Cart Items on the Cart Page
+132. Deleting Cart Items
+133. Fixing a Delete Product Bug
+134. Wrap Up
+135. Useful Resources & Links
+
+=== SECTION 8: SQL DATABASES ===
+136. Module Introduction
+137. Choosing a Database
+138. NoSQL Introduction
+139. Comparing SQL and NoSQL
+140. Setting Up MySQL
+141. Connecting our App to the SQL Database
+142. Basic SQL & Creating a Table
+143. Retrieving Data
+144. Fetching Products
+145. Fetching Products - Time to Practice
+146. Inserting Data Into the Database
+147. Fetching a Single Product with the "where" Condition
+148. Wrap Up
+149. Useful Resources & Links
+
+=== SECTION 9: SEQUELIZE ===
+150. Module Introduction
+151. What is Sequelize?
+152. Connecting to the Database
+153. Defining a Model
+154. Syncing JS Definitions to the Database
+155. Inserting Data & Creating a Product
+156. MUST READ: findById() in Sequelize 5
+157. Retrieving Data & Finding Products
+158. Getting a Single Product with the "where" Condition
+159. Fetching Admin Products
+160. Updating Products
+161. Deleting Products
+162. Creating a User Model
+163. Adding a One-To-Many Relationship
+164. Creating & Managing a Dummy User
+165. Using Magic Association Methods
+166. Fetching Related Products
+167. One-To-Many & Many-To-Many Relations
+168. Creating & Fetching a Cart
+169. Adding New Products to the Cart
+170. Adding Existing Products & Retrieving Cart Items
+171. Deleting Related Items & Deleting Cart Products
+172. Adding an Order Model
+173. Storing Cartitems as Orderitems
+174. Resetting the Cart & Fetching and Outputting Orders
+175. Wrap Up
+176. Useful Resources & Links
+
+=== SECTION 10: MONGODB ===
+177. Module Introduction
+178. What is MongoDB?
+179. Relations in NoSQL
+180. Setting Up MongoDB
+181. Installing the MongoDB Driver
+182. Creating the Database Connection
+183. Finishing the Database Connection
+184. Using the Database Connection
+185. Creating Products
+186. Understanding the MongoDB Compass
+187. Fetching All Products
+188. Fetching a Single Product
+189. Making the "Edit" & "Delete" Buttons Work Again
+190. Working on the Product Model to Edit our Product
+191. Finishing the "Update Product" Code
+192. One Note About Updating Products
+193. Deleting Products
+194. Fixing the "Add Product" Functionality
+195. Creating New Users
+196. Storing the User in our Database
+197. Working on Cart Items & Orders
+198. Adding the "Add to Cart" Functionality
+199. Storing Multiple Products in the Cart
+200. Displaying the Cart Items
+201. Fixing a Bug
+202. Deleting Cart Items
+203. Adding an Order
+204. Adding Relational Order Data
+205. Getting Orders
+206. Removing Deleted Items From the Cart
+207. Wrap Up
+208. Useful Resources & Links
+209. Two Adjustments (behind the scenes)
+
+=== SECTION 11: MONGOOSE ===
+210. Module Introduction
+211. What is Mongoose?
+212. Connecting to the MongoDB Server with Mongoose
+213. Creating the Product Schema
+214. Saving Data Through Mongoose
+215. Fetching All Products
+216. Fetching a Single Product
+217. Updating Products
+218. Deleting Products
+219. Adding and Using a User Model
+220. Using Relations in Mongoose
+221. One Important Thing About Fetching Relations
+222. Working on the Shopping Cart
+223. Loading the Cart
+224. Deleting Cart Items
+225. Creating & Getting Orders
+226. Storing All Order Related Data
+227. Clearing the Cart After Storing an Order
+228. Getting & Displaying the Orders
+229. Wrap Up
+230. Useful Resources & Links
+
+=== SECTION 12: SESSIONS & COOKIES ===
+231. Module Introduction
+232. What is a Cookie?
+233. The Current Project Status
+234. Optional: Creating the Login Form
+235. Adding the Request Driven Login Solution
+236. Setting a Cookie
+237. Manipulating Cookies
+238. Configuring Cookies
+239. What is a Session?
+240. Initializing the Session Middleware
+241. Using the Session Middleware
+242. Using MongoDB to Store Sessions
+243. Sessions & Cookies - A Short Summary
+Assignment 5: Time to Practice - Sessions and Cookies
+244. Deleting a Cookie
+245. Fixing Some Minor Bugs
+246. Making "Add to Cart" Work Again
+247. Two Tiny Improvements
+248. Wrap Up
+249. Code Adjustments
+250. Useful Resources & Links
+
+=== SECTION 13: AUTHENTICATION ===
+251. Module Introduction
+252. What is Authentication?
+253. How is Authentication Implemented?
+254. Our Updated Project Status
+255. Implementing an Authentication Flow
+256. Encrypting Passwords
+257. Adding a Tiny Code Improvement
+258. Adding the Signin Functionality
+259. Working on Route Protection
+260. Using Middleware to Protect Routes
+261. Understanding CSRF Attacks
+262. Using a CSRF Token
+263. Adding CSRF Protection
+264. csurf() Alternatives
+265. Fixing the Order Button
+266. Providing User Feedback
+267. Optional: Styling Error Messages
+268. Finishing the Flash Messages
+269. Adding Additional Flash Messages
+270. Wrap Up
+271. Useful Resources & Links
+
+=== SECTION 14: SENDING EMAILS ===
+272. Module Introduction
+273. How Does Sending Emails Work?
+274. Using SendGrid
+275. Using Nodemailer to Send an Email
+276. Potential Limitation for Large Scale Apps
+277. Useful Resources & Links
+
+=== SECTION 15: ADVANCED AUTHENTICATION ===
+278. Module Introduction
+279. Resetting Passwords
+280. Implementing the Token Logic
+281. Creating the Token
+282. Creating the Reset Password Form
+283. Adding Logic to Update the Password
+284. Why we Need Authorization
+285. Adding Authorization
+286. Adding Protection to Post Actions
+287. Why Editing Fails
+288. Wrap Up
+289. Useful Resources & Links
+
+=== SECTION 16: VALIDATION ===
+290. Module Introduction
+291. Why Should We Use Validation?
+292. How to Validate Input?
+293. Setup & Basic Validation
+294. Using Validation Error Messages
+295. Built-In & Custom Validators
+296. More Validators
+297. Checking For Field Equality
+298. Adding Async Validation
+Assignment 6: Time to Practice - Validation
+299. Keeping User Input
+300. Adding Conditional CSS Classes
+301. Adding Validation to Login
+302. Sanitizing Data
+303. Validating Product Addition
+304. Validating Product Editing
+305. Wrap Up
+306. Useful Resources & Links
+
+=== SECTION 17: ERROR HANDLING ===
+307. Module Introduction
+308. Types of Errors & Error Handling
+309. Analyzing the Error Handling in the Current Project
+310. Errors - Some Theory
+311. Throwing Errors in Code
+312. Returning Error Pages
+313. Using the Express.js Error Handling Middleware
+314. Updating the App
+315. Using the Error Handling Middleware Correctly
+316. Status Codes
+317. Available Status Codes
+318. Wrap Up
+319. Useful Resources & Links
+
+=== SECTION 18: FILE UPLOAD & DOWNLOAD ===
+320. Module Introduction
+321. Adding a File Picker to the Frontend
+322. Handling Multipart Form Data
+323. Handling File Uploads with Multer
+324. Configuring Multer to Adjust Filename & Filepath
+325. Filtering Files by Mimetype
+326. Storing File Data in the Database
+327. Remove imageUrl from "Add Product"
+328. Serving Images Statically
+329. Downloading Files with Authentication
+330. Setting File Type Headers
+331. Restricting File Access
+332. Streaming Data vs Preloading Data
+333. Using PDFKit for .pdf Generation
+334. Generating .pdf Files with Order Data
+335. Deleting Files
+336. Fixing Invoice Links
+337. Wrap Up
+338. Useful Resources & Links
+
+=== SECTION 19: PAGINATION ===
+339. Module Introduction
+340. Adding Pagination Links
+341. Retrieving a Chunk of Data
+342. Skip & Limit with SQL
+343. Preparing Pagination Data on the Server
+344. Adding Dynamic Pagination Buttons
+345. Re-Using the Pagination Logic & Controls
+346. Wrap Up
+347. Useful Resources & Links
+
+=== SECTION 20: ASYNC REQUESTS ===
+348. Module Introduction
+349. What are Async Requests?
+350. Adding Client Side JS Code
+351. The JSON Data Format
+352. Sending & Handling Background Requests
+353. Manipulating the DOM
+354. Useful Resources & Links
+
+=== SECTION 21: PAYMENTS ===
+355. Module Introduction
+356. How Payments Work
+357. Adding a Checkout Page
+358. Using Stripe in Your App
+359. Useful Resources & Links
+
+=== SECTION 22: REST APIs - BASICS ===
+360. Module Introduction
+361. What are REST APIs and why do we use Them?
+362. Accessing Data with REST APIs
+363. Understanding Routing & HTTP Methods
+364. REST APIs - The Core Principles
+365. Creating our REST API Project & Implementing the Route Setup
+366. Sending Requests & Responses and Working with Postman
+367. REST APIs, Clients & CORS Errors
+368. Sending POST Requests
+369. Wrap Up
+370. Useful Resources & Links
+
+=== SECTION 23: REST APIs - PRACTICAL APPLICATION ===
+371. Module Introduction
+372. REST APIs & The Rest Of The Course
+373. Understanding the Frontend Setup
+374. Planning the API
+375. Fetching Lists of Posts
+376. Adding a Create Post Endpoint
+377. Adding Server Side Validation
+378. Setting Up a Post Model
+379. Storing Posts in the Database
+380. Static Images & Error Handling
+381. Fetching a Single Post
+382. Image Names & Windows
+383. Uploading Images
+384. Updating Posts
+385. Deleting Posts
+386. Adding Pagination
+387. Adding a User Model
+388. Adding User Signup Validation
+389. Signing Users Up
+390. How Does Authentication Work?
+391. Starting with User Login
+392. Logging In & Creating JSON Web Tokens (JWTs)
+393. Using & Validating the Token
+394. Adding Auth Middleware to All Routes
+395. Connecting Posts & Users
+396. Adding Authorization Checks
+397. Clearing Post-User Relations
+Assignment 7: Time to Practice - Working with REST APIs
+398. Wrap Up
+399. Useful Resources & Links
+
+=== SECTION 24: ASYNC/AWAIT ===
+400. Module Introduction
+401. What is Async Await All About?
+402. Transforming "Then Catch" to "Async Await"
+403. Top-level "await"
+Assignment 8: Time to Practice - Async Await
+404. The User Name is Missing!
+405. Wrap Up
+406. Useful Resources & Links
+
+=== SECTION 25: WEBSOCKETS & SOCKET.IO ===
+407. Module Introduction
+408. What Are Websockets & Why Would You Use Them?
+409. Websocket Solutions - An Overview
+410. Setting Up Socket.io on the Server
+411. Establishing a Connection From the Client
+412. Identifying Realtime Potential
+413. Sharing the IO Instance Across Files
+414. Synchronizing POST Additions
+415. Fixing a Bug - The Missing Username
+416. Updating Posts On All Connected Clients
+417. Sorting Correctly
+418. Deleting Posts Across Clients
+419. Wrap Up
+420. Useful Resources & Links
+
+=== SECTION 26: GRAPHQL ===
+421. Module Introduction
+422. What is GraphQL?
+423. Understanding the Setup & Writing our First Query
+424. Defining a Mutation Schema
+425. Adding a Mutation Resolver & GraphiQL
+426. Adding Input Validation
+427. Handling Errors
+428. Connecting the Frontend to the GraphQL API
+429. Adding a Login Query & a Resolver
+430. Adding Login Functionality
+431. Adding a Create Post Mutation
+432. Extracting User Data From the Auth Token
+433. Sending the "Create Post" Query
+434. Fixing a Bug & Adding New Posts Correctly
+435. Adding a "Get Post" Query & Resolver
+436. Sending "Create Post" and "Get Post" Queries
+437. Adding Pagination
+438. Uploading Images
+439. Fetching the imageUrl
+440. Viewing a Single Post
+441. Updating Posts
+442. Deleting Posts
+443. Adding Posts & Pagination
+444. Managing the User Status
+445. Using Variables
+446. Fixing a Pagination Bug
+447. Wrap Up
+448. Useful Resources & Links
+
+=== SECTION 27: DEPLOYMENT ===
+449. Module Introduction
+450. Deploying Different Kinds of Apps
+451. Deployment Preparations
+452. Using Environment Variables
+453. Using Production API Keys
+454. Setting Secure Response Headers with Helmet
+455. Compressing Assets
+456. Setting Up Request Logging
+457. More on Logging
+458. Setting Up a SSL Server
+459. Using a Hosting Provider
+460. Understanding the Project & the Git Setup
+461. A Deployment Example with Heroku
+462. Storing User-generated Files on Heroku
+463. Deploying APIs
+464. Useful Resources & Links
+
+=== SECTION 28: TESTING ===
+465. Module Introduction
+466. What is Testing?
+467. Why & How?
+468. Setup and Writing a First Test
+469. Testing the Auth Middleware
+470. Organizing Multiple Tests
+471. What Not To Test!
+472. Using Stubs
+473. Testing Controllers
+474. Testing Asynchronous Code
+475. Setting up a Testing Database
+476. Testing Code With An Active Database
+477. Cleaning Up
+478. Hooks
+479. Testing Code That Requires Authentication
+480. Wrap Up & Mastering Tests
+481. Useful Resources & Links
+
+=== SECTION 29: NPM & BUILD TOOLS ===
+482. Module Introduction
+483. npm & Node.js
+484. Using npm
+485. Versioning in package.json
+486. What is a Build Tool?
+487. Using Node.js in Build Processes
+488. Useful Resources & Links
+
+=== SECTION 30: MODERN JAVASCRIPT & NODE.JS ===
+489. Module Introduction
+490. What is this Module About?
+491. Working with ES Modules & Node
+492. More on ES Modules
+493. Node Core Modules & Promises
+494. Module Resources
+
+=== SECTION 31: TYPESCRIPT WITH NODE.JS ===
+495. Module Introduction
+496. TypeScript: What & Why?
+497. TypeScript Setup
+498. Assigning Types
+499. Type Inference & Type Casting
+500. Configuring TypeScript
+501. Working with Union Types
+502. Using Object & Array Types
+503. Working with Type Aliases & Interfaces
+504. Understanding Generics
+505. A First Summary
+506. Node & TypeScript: Setup
+507. Getting Started with Node and TypeScript
+508. Writing TypeScript Express.js Code
+509. Adding REST Routes with TypeScript
+510. Finishing the REST Routes
+511. Testing the API
+512. Using Type Casting
+513. Moving to a Better Project Structure
+514. Wrap Up
+515. Module Resources
+
+=== SECTION 32: DENO - INTRODUCTION ===
+516. Module Introduction
+517. What is Deno?
+518. Why Deno?
+519. Deno Setup
+520. Writing First Deno Code
+521. The Deno Runtime (Namespace) API
+522. Using the Runtime API
+523. Working with Deno Permissions
+524. Repeating the Example with Node
+525. How Deno Features Are Organized
+526. Using the Standard Library
+527. Creating a Webserver
+528. Using the Oak Framework with Deno
+529. More on Module URLs
+530. An Example Node REST API
+531. Re-building the REST API with Deno
+532. Should You Switch From Node to Deno?
+533. Module Resources
+
+=== SECTION 33: DENO - CRUD & DATABASES ===
+534. Module Introduction
+535. App Setup
+536. Handling CORS Errors
+537. Connecting Deno to MongoDB
+538. Using the MongoDB Client Module
+539. Finishing the Deno MongoDB CRUD Operations
+540. Wrap Up
+541. Module Resources
+
+=== SECTION 34: COURSE WRAP UP ===
+542. Course Roundup
+543. Course Slides
+544. Bonus: More Content!
