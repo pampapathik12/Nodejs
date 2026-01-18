@@ -1,16 +1,16 @@
 nodejs program life cycle
 
 === SECTION 1: THE BASICS ===
-25. Module Introduction
-26. How The Web Works
-27. Creating a Node Server
-28. The Node Lifecycle & Event Loop
-29. Controlling the Node.js Process
-30. Understanding Requests
-31. Sending Responses
-32. Request & Response Headers
-33. Routing Requests
-34. Redirecting Requests
+25. Module Introduction//
+26. How The Web Works//
+27. Creating a Node Server//
+28. The Node Lifecycle & Event Loop//
+29. Controlling the Node.js Process//
+30. Understanding Requests//
+31. Sending Responses//
+32. Request & Response Headers//
+33. Routing Requests//
+34. Redirecting Requests//
 35. Parsing Request Bodies
 36. Understanding Event Driven Code Execution
 37. Blocking and Non-Blocking Code
