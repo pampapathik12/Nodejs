@@ -1,0 +1,8 @@
+// core modules
+ /* 
+ http -> launching a server and send requests
+ https -> launch a ssl server
+ fs  -> file system  to read and write files
+ path -> work with file and directory path
+ as -> work with operating system
+ */
