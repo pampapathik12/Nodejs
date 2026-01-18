@@ -13,7 +13,7 @@ nodejs program life cycle
 34. Redirecting Requests//
 35. Parsing Request Bodies//
 36. Understanding Event Driven Code Execution//
-37. Blocking and Non-Blocking Code
+37. Blocking and Non-Blocking Code//
 38. Node.js - Looking Behind the Scenes
 39. Using the Node Modules System
 40. Wrap Up
