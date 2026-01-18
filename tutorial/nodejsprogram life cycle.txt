@@ -11,8 +11,8 @@ nodejs program life cycle
 32. Request & Response Headers//
 33. Routing Requests//
 34. Redirecting Requests//
-35. Parsing Request Bodies
-36. Understanding Event Driven Code Execution
+35. Parsing Request Bodies//
+36. Understanding Event Driven Code Execution//
 37. Blocking and Non-Blocking Code
 38. Node.js - Looking Behind the Scenes
 39. Using the Node Modules System
