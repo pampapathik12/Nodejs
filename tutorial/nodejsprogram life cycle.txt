@@ -14,7 +14,7 @@ nodejs program life cycle
 35. Parsing Request Bodies//
 36. Understanding Event Driven Code Execution//
 37. Blocking and Non-Blocking Code//
-38. Node.js - Looking Behind the Scenes
+38. Node.js - Looking Behind the Scenes//
 39. Using the Node Modules System
 40. Wrap Up
 Assignment 1: Time to Practice - The Basics
