@@ -1,46 +1,32 @@
 /* node app.js */
 
 const express = require('express');
+const adminroutes = require('./routes/admin');
+const shoproutes = require('./routes/shop');
+
 const bodyParser = require('body-parser');
+const path = require('path');
 
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));// to parse the incoming request bodies
 
-app.use('/',(req, res, next) => {
-    console.log('In the first middleware!');
-    next();
-});
+app.use(express.static(path.join(__dirname, 'public')));// to serve static files like css, images , js  from public folder
+app.use('/admin', adminroutes);
+app.use(shoproutes);
 
-app.use('/add-product', (req, res, next) => {
-    console.log('In the middleware!1');
-   // res.send('<h1>Hello from Express.js server!</h1>');
-    res.send('<form action="/product" method="POST"><input type="text" name="title"><button type="submit">Add Product</button></form>');
-   // next();
-});
-
-/* app.use('/product', (req, res, next) => {
-    console.log(req.body);
-
-    res.redirect('/');
-   // next();
-}); */
-
-app.post('/product', (req, res, next) => {
-    console.log(req.body);
-
-    res.redirect('/');
-   // next();
-});
-
-app.use('/',(req, res, next) => {
+/* app.use('/',(req, res, next) => {
     console.log('In the middleware!');
     res.send('<h1>Welcome to the Home Page!</h1>');
    // next();
-});
+}); */
+app.use((req, res, next) => {
+   
+   // res.status(404).send('<h1>Page Not Found!</h1>');
+   res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
+   // next();           
+})
 
 
 
-app.listen(3000, () => {
-    console.log('Server is running on port 3000');
-});
+app.listen(3000);
