@@ -1,0 +1,19 @@
+Managing data wihtout a Database
+render Dynamic content in our views
+Understanding Templating Engines
+
+Sharing Data Across Requests & Users
+Templating Engines
+    htmlish Template
+    node/express content
+    Templating Engines
+    replace placeholders / snippets with html content
+    html
+    Available Templateengines
+        EJS <p><<%= name %></p>
+        Pug p # {name}
+        handler <p> {{name}}</p>
+
+npm install --save ejs pug express-handlebars
+
+
